@@ -1,0 +1,17 @@
+body{
+    background: darkgray;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.slider{
+    margin: 0 auto;
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    outline: 4px solid black;
+}
+.slider-img{
+    position: relative;
+}
