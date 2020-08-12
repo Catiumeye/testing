@@ -9,11 +9,12 @@ body{
     max-height: 100vh;
 }
 .slider{
-    margin: 20px auto;
+    margin: 150px auto;
     height: 300px;
     width: 400px;
     overflow: hidden;
     outline: 4px solid black;
+    transform: scale(1.5);
 }
 .slider-img{
     position: relative;
