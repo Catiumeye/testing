@@ -1,12 +1,15 @@
 body{
     background: darkgray;
+    margin: 0;
 }
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 90%;
+    max-height: 100vh;
 }
 .slider{
-    margin: 0 auto;
+    margin: 20px auto;
     height: 300px;
     width: 400px;
     overflow: hidden;
@@ -14,4 +17,27 @@ body{
 }
 .slider-img{
     position: relative;
+    user-select: none;
+    transition: all 1.2s ease-in-out;
+}
+.slider_arrows{
+    display: inline-flex;
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 400px;
+    justify-content: space-between;
+}
+.left, .right{
+    color: red;
+    cursor: pointer;
+    width: 15%;
+}
+.left:hover, .right:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    /* transition: all 0.3s ease 0s; */
+}
+.description_text{
+    text-align: center;
+    font-size: 24px;
 }

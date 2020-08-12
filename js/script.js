@@ -1,14 +1,14 @@
 let img = document.querySelector('.slider-img');
-let lb = document.querySelector('#left');
-let rb = document.querySelector('#right');
+let lb = document.querySelector('.left');
+let rb = document.querySelector('.right');
 
 let sl = 0;
 
 lb.addEventListener('click', levo);
 
 function levo(){
-    if(sl < -3200 || sl > -400 ){
-        sl = 0;
+    if(sl > -400 ){
+        sl = -4000;
     }
     sl += 400;
     img.style.left = sl + 'px';
@@ -17,8 +17,8 @@ function levo(){
 rb.addEventListener('click', pravo);
 
 function pravo(){
-    if(sl < -3200 || sl > 0 ){
-        sl = 0;
+    if(sl < -3200){
+        sl = 400;
     }
     sl -= 400;
     img.style.left = sl + 'px'; 
