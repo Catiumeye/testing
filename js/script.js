@@ -1,4 +1,4 @@
-let img = document.querySelector('.slider-img');
+let img = document.querySelector('.slider_img');
 let lb = document.querySelector('.left');
 let rb = document.querySelector('.right');
 

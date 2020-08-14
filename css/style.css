@@ -1,3 +1,7 @@
+ /* common */
+
+ /* /common */
+
 body{
     background: darkgray;
     margin: 0;
@@ -16,10 +20,10 @@ body{
     outline: 4px solid black;
     transform: scale(1.5);
 }
-.slider-img{
+.slider_img{
+    transition: all 1.2s ease-in-out;
     position: relative;
     user-select: none;
-    transition: all 1.2s ease-in-out;
 }
 .slider_arrows{
     display: inline-flex;
